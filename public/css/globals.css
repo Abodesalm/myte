@@ -1,0 +1,288 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  direction: rtl !important;
+  scroll-behavior: smooth;
+}
+
+::-moz-selection {
+  background-color: #02ACEA;
+  color: #081025;
+}
+
+::selection {
+  background-color: #02ACEA;
+  color: #081025;
+}
+
+@font-face {
+  font-family: ar-b;
+  src: url("../media/Shabnam-Bold.ttf");
+}
+@font-face {
+  font-family: ar-l;
+  src: url("../media/Shabnam-Light.ttf");
+}
+.pad {
+  padding: 2rem 10rem;
+}
+@media screen and (max-width: 1300px) {
+  .pad {
+    padding: 2rem 6rem;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .pad {
+    padding: 1.5rem 4rem;
+  }
+}
+@media screen and (max-width: 720px) {
+  .pad {
+    padding: 1.5rem 4rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  .pad {
+    padding: 1rem 1rem;
+  }
+}
+
+body {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: ar-l;
+}
+
+.lbg {
+  background-image: url("../images/lightbg.jpg");
+}
+
+.dbg {
+  background-image: url("../images/darkbg.jpg");
+}
+
+.sh {
+  box-shadow: 0.5rem 0.5rem black, -0.5rem -0.5rem #02ACEA;
+}
+
+.sh2 {
+  box-shadow: 0 0 5px 1px black inset;
+}
+
+.sh3 {
+  box-shadow: 0 0 5px 0.5px black;
+}
+
+.ar-b {
+  font-family: ar-b;
+}
+
+.ar-l {
+  font-family: ar-l;
+}
+
+.ribon::before {
+  content: "";
+  width: 4px;
+  height: 100%;
+  background-color: #02ACEA;
+  display: inline-block;
+}
+
+.lss {
+  letter-spacing: 1.5px;
+}
+
+.web {
+  background-color: #dc2626;
+}
+
+.mob {
+  background-color: #2f8345;
+}
+
+.logo {
+  background-color: #b4770f;
+}
+
+.des {
+  background-color: #3636b5;
+}
+
+.oth {
+  background-color: #425a77;
+}
+
+.ltr {
+  direction: ltr !important;
+}
+
+.scrollTop {
+  width: 40px;
+  height: 40px;
+  z-index: 10;
+  background-color: #02ACEA;
+  position: fixed;
+  cursor: pointer;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  bottom: -50px;
+  right: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s ease;
+  -webkit-transition: 0.5s ease;
+  -moz-transition: 0.5s ease;
+  -ms-transition: 0.5s ease;
+  -o-transition: 0.5s ease;
+}
+
+.scrollTop.show {
+  bottom: 15px;
+}
+@media screen and (max-width: 720px) {
+  .scrollTop.show {
+    bottom: 20px;
+  }
+}
+
+.nav-links::after {
+  content: "";
+  width: 10px;
+  height: 1px;
+  background-color: #02ACEA;
+  position: absolute;
+  bottom: -2px;
+  left: calc(50% - 40px);
+  transition: ease 500ms;
+  -webkit-transition: ease 500ms;
+  -moz-transition: ease 500ms;
+  -ms-transition: ease 500ms;
+  -o-transition: ease 500ms;
+  display: none;
+}
+
+.nav-links:hover::after {
+  width: 80px;
+  display: inline;
+}
+
+.theWidth {
+  width: 500px;
+}
+@media screen and (max-width: 1024px) {
+  .theWidth {
+    width: 400px;
+  }
+}
+@media screen and (max-width: 720px) {
+  .theWidth {
+    width: 300px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .theWidth {
+    width: 250px;
+  }
+}
+
+.menuu {
+  cursor: pointer;
+}
+
+.menuu:hover {
+  color: #02ACEA;
+}
+
+.nav-ss {
+  display: none;
+}
+
+.nav-overlay {
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #081025;
+  transition: 0.5s ease;
+  -webkit-transition: 0.5s ease;
+  -moz-transition: 0.5s ease;
+  -ms-transition: 0.5s ease;
+  -o-transition: 0.5s ease;
+}
+
+.nav-overlay .overlay-close {
+  font-size: 27px;
+  color: #02ACEA;
+  cursor: pointer;
+  position: absolute;
+  top: 25px;
+  right: 15px;
+}
+
+.nav-links-ss {
+  list-style: none;
+}
+
+.nav-links-ss li {
+  margin: 2rem;
+  cursor: pointer;
+  text-transform: capitalize;
+  color: #02ACEA;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.nav-links-ss li:hover {
+  color: #DFEDF0;
+}
+
+.slide-bottom {
+  animation: slide-bottom 0.5s ease-out both;
+  -webkit-animation: slide-bottom 0.5s ease-out both;
+}
+@keyframes slide-bottom {
+  0% {
+    transform: translateY(-40%);
+    -webkit-transform: translateY(-40%);
+    -moz-transform: translateY(-40%);
+    -ms-transform: translateY(-40%);
+    -o-transform: translateY(-40%);
+  }
+  60% {
+    transform: translateY(0);
+  }
+}
+@media screen and (max-width: 720px) {
+  .nav-links {
+    display: none;
+  }
+  .nav-ss {
+    display: flex;
+  }
+  .none {
+    display: none;
+  }
+}
+@media screen and (max-width: 500px) {
+  nav {
+    padding: 1rem;
+  }
+  .login {
+    display: none;
+  }
+  .nav-logo img {
+    width: 110px;
+  }
+}/*# sourceMappingURL=globals.css.map */
