@@ -7,18 +7,18 @@ const ToggleTheme = () => {
 
 
   const [darkMode, setDarkMode] = useState(true)
+  const [theme, setTheme] = useState('dark')
   useEffect(()=> {
-    const theme = localStorage.getItem('theme');
     if (theme === 'dark') setDarkMode(true)
     else if (theme === 'light') setDarkMode(false)
   } , [])
   useEffect(()=>{
     if (darkMode){
       document.documentElement.classList.add('dark')
-      localStorage.setItem('theme','dark')
+      setTheme('dark')
     }else{
       document.documentElement.classList.remove('dark')
-      localStorage.setItem('theme','light')
+      setTheme('light')
     }
   },[darkMode])
 
