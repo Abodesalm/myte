@@ -25,9 +25,9 @@ const Serv = ({clas, title, icon, url}) => {
   const index = ['self-start','self-end -mt-[7rem] xl:mt-0']
 
   return (
-    <Link href={url} className={'theWidth h-[160px]    bg-dark dark:bg-light     rounded-[30px]     pt-4 ps-8 md:ps-4 relative xl:mb-4 sh3  ' + index[clas]}>
-      <h1 className="text-[30px] font-bold ar-b text-light dark:text-dark">{title}</h1> 
-      {ChooseIcon('absolute w-[110px] md:w-[90px] md:left-1 md:-bottom-5 h-[150px] bottom-0 left-8 text-sec')}
+    <Link href={url} className={'theWidth h-[160px] sm:h-[140px]    bg-dark dark:bg-light     rounded-[30px]     pt-4 ps-8 md:ps-4 relative xl:mb-4 sh3  ' + index[clas]}>
+      <h1 className="text-[30px] sm:text-[25px] font-bold ar-b text-light dark:text-dark">{title}</h1> 
+      {ChooseIcon('absolute w-[110px] md:w-[90px] md:left-1 md:-bottom-5 h-[150px] bottom-0 left-8 text-sec sm:w-[75px_!important] sm:-bottom-[10px_!important]')}
       <p className='md:ms-[1rem] text-light dark:text-dark ms-[6rem] mt-6'>-- اضغط هنا -- </p>
     </Link>
   )

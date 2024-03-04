@@ -6,7 +6,7 @@ import ToUp from "@/components/ToUp";
 
 export const metadata: Metadata = {
   title: "Myte Team",
-  description: "فريق يقدم العديد من الخدمات الإلكترونية المتنوعة من قبل العديد من المختصين",
+  description: "مؤسسة إلكترونية تقدم العديد من الخدمات المتنوعة على الإنترنت من قبل العديد من المختصين",
 };
 
 export default function RootLayout({

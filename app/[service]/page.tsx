@@ -7,6 +7,8 @@ import { services } from "@/public/data/all";
 import Contacts from "@/components/Contacts";
 import { redirect, useParams } from "next/navigation";
 
+
+
 export default function Service () {
   const serv = useParams().service;
   let data

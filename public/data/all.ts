@@ -2,8 +2,8 @@
 
 
 const accounts = [
-    {name:'+966 59 243 7169',url:'https://wa/+966 59 243 7169',icon:'WA'},
-    {name:'Telegram',url:'www.tm.com',icon:'TE'},
+    {name:'+966 59 243 7169',url:'https://wa.me/+966592437169',icon:'WA'},
+    {name:'Telegram',url:'www.te.me',icon:'TE'},
     {name:'Discord',url:'https://discord.gg/s8rhJ8qgNF',icon:'DI'},
     {name:'FaceBook',url:'https://www.facebook.com/profile.php?id=61555551359909&mibextid=ZbWKwL',icon:'FB'},
     {name:'Instagram',url:'https://www.instagram.com/myte.team?igsh=NHFvajRuajQ3ZnNq',icon:'IN'},

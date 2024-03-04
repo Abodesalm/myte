@@ -26,10 +26,10 @@ const Project = ({title, type, disc, url}) => {
       <div className={"flex items-center justify-center font-bold w-full h-[50px] rounded-t-[15px] " + type}>
         <p>{typee()}</p>
       </div>
-      <div className="flex flex-col p-4">
-        <h1 className="font-bold lss">{title}</h1>
+      <div className="flex flex-col p-4 sm:p-2">
+        <h1 className="font-bold lss sm:text-[12px] text-center">{title}</h1>
         <hr/>
-        <p className="w-[150px] text-[14px] mt-2">{disc}</p>
+        <p className="w-[150px] text-[14px] mt-2 sm:text-[10px]">{disc}</p>
         <Btn link={url} target='_blanc' value='إذهب' classn='self-center mt-2'/>
       </div>
     </div>
