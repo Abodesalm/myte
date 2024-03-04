@@ -7,11 +7,12 @@ export const metadata: Metadata = {
   description: "جميع العقود و الفواتير الخاصة بالمؤسسة تكون هنا.",
 };
 
-
-export default function({children}: Readonly<{children: React.ReactNode;}>) {
+const kahta = ({children}: Readonly<{children: React.ReactNode;}>) => {
   return (
     <>
       {children}
     </>
   );
 }
+
+export default kahta
