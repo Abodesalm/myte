@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 };
 
 
-export default function({children}) {
+export default function({children}: Readonly<{children: React.ReactNode;}>) {
   return (
     <>
       {children}
