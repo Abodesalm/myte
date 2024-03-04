@@ -8,10 +8,11 @@ export const metadata: Metadata = {
 };
 
 
-export default function({children}: Readonly<{children: React.ReactNode;}>) {
+const katha = ({children}: Readonly<{children: React.ReactNode;}>) =>{
   return (
     <>
       {children}
     </>
   );
 }
+export default katha;
