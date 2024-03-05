@@ -26,7 +26,7 @@ export default function Service () {
         <HT value={data.name} clas="w-[300px] rounded-[20px] mb-8 md:mb-2"/>
         {
               data.features.map((ser) =>
-              <Aproval clas="md:text-[12px] " value={ser.title} key={ser.title}/>
+              <Aproval clas="md:text-[12px] font-light   " value={ser.title} key={ser.title}/>
             )
         }
         <Feature value='تستطيع طلب خدمتك من أي مكان في العالم' clas='absolute bottom-[100px] right-[150px] w-[320px] none font-bold'/>

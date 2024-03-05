@@ -13,7 +13,7 @@ export default function Contact ()  {
         <HT value='تواصل معنا :' clas="w-[200px] rounded-[20px] mb-8 md:mb-2"/>
           {
             why.map((why)=>
-              <Aproval clas="md:text-[12px] " value={why.title} key={why.icon}/>
+              <Aproval clas="md:text-[12px] font-light   " value={why.title} key={why.icon}/>
             )
           }
         <Feature value='تستطيع طلب خدمتك من أي مكان في العالم' clas='absolute bottom-[100px] right-[150px] w-[320px] none font-bold'/>

@@ -9,12 +9,10 @@ export default function About() {
       <div className="mt-8 flex flex-col gap-2">
         {
           about.map((el)=>
-            <Aproval value={el} key={el}/>
+            <Aproval value={el} key={el} clas="font-light"/>
           )
         }
       </div>
-
-
     </div>
   )
 }

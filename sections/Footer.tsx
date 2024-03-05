@@ -29,6 +29,7 @@ export default function Footer () {
                 <p className="mt-2 ">أقسام مهمة :</p>
                 <div className="flex flex-col ms-4 mt">
                     <Link href='projects' className="hover:text-main w-[fit-content]">- مشاريعنا</Link>
+                    <Link href='policy' className="hover:text-main w-[fit-content]">- سياسة الخدمة</Link>
                     <Link href='about' className="hover:text-main w-[fit-content]">- معلومات عنا</Link>
                     <Link href='contact' className="hover:text-main w-[fit-content]">- تواصل معنا</Link>
                     <Link href='contracts' className="hover:text-main w-[fit-content]">- العقود</Link>
