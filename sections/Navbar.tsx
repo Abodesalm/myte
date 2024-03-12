@@ -4,7 +4,7 @@ import Image from "next/image";
 import logo from '../public/images/logo-text.png';
 import ToggleTheme from "@/components/ToggleTheme";
 import { useState } from "react";
-import { MdOutlineMenu , MdOutlineClose } from "react-icons/md";
+import { MdOutlineClose } from "react-icons/md";
 import { GiHamburgerMenu } from "react-icons/gi";
 
 export default function Navbar() {

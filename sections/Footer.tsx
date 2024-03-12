@@ -39,7 +39,7 @@ export default function Footer () {
 
             <div className="w-full h-full flex flex-col items-center justify-center">
                 <Image src={logo} width={150} alt="شعار مؤسسة مايت الإلكترونية"/>
-                <p>Myte Team {year}</p>
+                <p>Copyright Myte Team {year}</p>
             </div>
         </footer>
     )

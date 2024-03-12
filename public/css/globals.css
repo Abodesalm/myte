@@ -267,9 +267,6 @@ body {
   .nav-ss {
     display: flex;
   }
-  .none {
-    display: none;
-  }
 }
 @media screen and (max-width: 500px) {
   nav {
