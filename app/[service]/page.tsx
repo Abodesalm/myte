@@ -16,6 +16,7 @@ export default function Service () {
   if(serv=='web'){ data = services.web} 
   else if(serv=='mob'){data = services.mob} 
   else if(serv=='des'){data = services.des} 
+  else if(serv=='vis'){data = services.vis} 
   else if(serv=='cyb'){data = services.cyb} 
   else if(serv=='ofc'){data = services.ofc} 
   else if(serv=='oth'){data = services.oth} 

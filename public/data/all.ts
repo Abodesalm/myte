@@ -12,12 +12,12 @@ const accounts = [
 ]
 
 const projects = [
-    {title:'Restaurant Website', url:'https://abodesalm.github.io/restaurant', disc:'موقع فرونت اند يعرض جميع مزايا مطعم غيركت', type:'web'},
+    {title:'موقع لمطعم', url:'https://abodesalm.github.io/restaurant', disc:"موقع فرونت اند يعرض جميع مزايا مطعم 'Gericht'", type:'web'},
     {title:'', url:'', disc:'', type:''},
     {title:'', url:'', disc:'', type:''},
     {title:'', url:'', disc:'', type:''},
     {title:'', url:'', disc:'', type:''},
-    {title:'', url:'', disc:'', type:''},
+    {title:'موقع صحة نفسية', url:'https://safeelictron.netlify.app', disc:'موقع بسيط يختبر صحتك النفسية', type:'web'},
     
 ]
 
@@ -56,10 +56,15 @@ const services = {
     'des':{name:'تصميم و مونتاج', features:[
         {title:'تصميم شعارات و بوسترات و صور حسب الطلب'},
         {title:'مونتاج الفيديوهات بجميع أنواعها'},
-        {title:'تصميم هوية بصرية'},
         {title:'تصميم مجسمات و منتجات ثلاثية الأبعاد'},
         {title:'تعليق صوتي'},
         {title:'إنتاج إعلانات و حملات دعائية'},
+    ]},
+    'vis':{name:'تصميم هوية بصرية', features:[
+        {title:'تصميم لوغو و براند متكامل'},
+        {title:'اختيار ألوان متناسقة تناسبك'},
+        {title:'تصميم خطوط خاصة بك'},
+        {title:'تصميم منتجات تجارية'},
     ]},
     'cyb':{name:'خدمات الأمن الإلكتروني', features:[
         {title:'خدمات اختبار الاختراق'},
@@ -94,6 +99,36 @@ const policy = {
     ]
 }
 
+/*
+Websites :	- small : +200 R.S		- medium : +1,600 R.S
+Mobile Apps :	- small : +400 R.s 		- medium : +1,800 R.S
+Graphic Design :
+  - Photo : +20 R.S.
+  - Montage : 	50 R.S	For Minute.
+  - Voice-Over :	20 R.S
+	- Small Pack : 	2 Photos , 30s Video :	          	80 R.S.	( 100 R.S )
+	- Medium Pack :	3 Photos , 1m Video : 	          	120 R.S	( 200 R.S )
+	- Large Pack :	5 Photos , 2m Video , Voice-Over :	240 R.S	( 300 R.S )
+Visual Idenity :
+  - Logo :      +100 R.S.
+  - colors :    10 R.S.
+  - font :      +60 R.S.
+	- Small Pack : 	Logo , Colors  :			                        100 R.S.  (200)
+	- Medium Pack :	Logo , Colors , Font , Pattern  :	            230 R.S.  (500)
+	- Large Pack :	Logo , Colors , Font , Pattern , MockUps  :   260 R.S.  (650)
+Write / Script :	+20 R.S
+
+*/
+
+
+const prices = {
+    web : {sm:200, lg:1600},
+    apk : {sm:400, lg:1800},
+    des : {ph:20, mo:50, vo:20, sm:80, md:120, lg:240},
+    vis : {lo:100, co:10, fo:60, sm:100, md:230, lg:260},
+    oth : {wr:20}
+}
+
 
 export {
     accounts,
@@ -101,5 +136,6 @@ export {
     projects,
     services,
     about,
-    policy
+    policy,
+    prices
 }

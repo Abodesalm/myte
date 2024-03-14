@@ -9,6 +9,7 @@ const services = () => {
     {icon:'web', title:'برمجة مواقع  الويب'},
     {icon:'mob', title:'برمجة تطبيقات الهاتف'},
     {icon:'des', title:'تصميم و مونتاج'},
+    {icon:'vis', title:'تصميم هوية بصرية'},
     {icon:'cyb', title:'خدمات الأمن الإلكتروني'},
     {icon:'ofc', title:'خدمات جامعية و مكتبية'},
     {icon:'oth', title:'خدمات أخرى'},

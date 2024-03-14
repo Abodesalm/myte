@@ -1,8 +1,8 @@
 
 import Link from 'next/link'
-import {FcMindMap, FcAndroidOs, FcMultipleCameras, FcBriefcase, FcMultipleDevices} from 'react-icons/fc'
 import { FaShieldVirus } from 'react-icons/fa6'
-import {BsAndroid2, BsCamera2, BsDisplay, BsFolderCheck, BsListCheck} from 'react-icons/bs'
+import {BsAndroid2, BsCamera2, BsDisplay, BsFolderSymlinkFill, BsListCheck} from 'react-icons/bs'
+import { BsEyeFill } from 'react-icons/bs'
 
 const Serv = ({clas, title, icon, url}) => {
 
@@ -13,10 +13,12 @@ const Serv = ({clas, title, icon, url}) => {
       return <BsAndroid2 className={clas}/>
     }else if(icon=='des'){
       return <BsCamera2 className={clas}/>
+    }else if(icon=='vis'){
+      return <BsEyeFill className={clas}/>
     }else if(icon=='cyb'){
       return <FaShieldVirus className={clas}/>
     }else if(icon=='ofc'){
-      return <BsFolderCheck className={clas}/>
+      return <BsFolderSymlinkFill className={clas}/>
     }else if(icon=='oth'){
       return <BsListCheck className={clas}/>
     }
