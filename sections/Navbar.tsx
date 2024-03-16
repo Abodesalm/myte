@@ -1,7 +1,7 @@
 "use client"
 import Link from "next/link";
 import Image from "next/image";
-import logo from '../public/images/logo-text.png';
+import logo from '../public/images/logo-svg.svg';
 import ToggleTheme from "@/components/ToggleTheme";
 import { useState } from "react";
 import { MdOutlineClose } from "react-icons/md";
@@ -35,7 +35,7 @@ export default function Navbar() {
                 <Link className="nav-links relative" href='/about'>عنا</Link>
             </div>
             <div>
-                <Image src={logo} alt="myte team logo" width={100}/>
+                <Image src={logo} alt="myte team logo" width={80}/>
             </div>
         </nav>
     )

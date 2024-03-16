@@ -24,7 +24,7 @@ const ToggleTheme = () => {
   return (
     <div className="
     relative w-16 h-8 flex items-center cursor-pointer rounded-full p-1 
-    dark:bg-black bg-main border border-dark
+    dark:bg-black bg-main border-2 border-light transition duration-200
     md:mr-[2rem]
     " onClick={() => setDarkMode(!darkMode)}>
         <FaMoon className="text-white " size={18} />

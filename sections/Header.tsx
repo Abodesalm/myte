@@ -6,7 +6,7 @@ export default function Header () {
   return (
     <div className="h-[500px] relative flex pad flex-row sm:flex-col bg-light/25 dark:bg-dark/55">
 
-      <p className="absolute text-red-500 bg-dark/80 p-4 font-bold rounded-[10px] left-[40%] text-[26px]">! هذا الموقع هو مجرد نسخة تجريبية !</p>
+      <p className="absolute text-red-500 bg-dark/80 p-4 font-bold rounded-[10px] left-[40%] sm:left-[calc(50%_-_165px)] text-[26px] sm:text-[20px]">! هذا الموقع هو مجرد نسخة تجريبية !</p>
 
       <div className="w-[60%] md:w-[90%] pt-[6rem] flex flex-col items-start">
         <div className="flex flex-col items-start bg-dark p-4 sm:p-1 dark:text-white sh">

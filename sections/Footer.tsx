@@ -3,7 +3,7 @@ import Link from "next/link";
 import { accounts } from "@/public/data/all";
 import SmallLink from "@/components/SmallLink";
 import Image from "next/image";
-import logo from '../public/images/myte-png.png'
+import logo from '../public/images/logo-svg.svg'
 
 export default function Footer () {
     const year = new Date().getFullYear();
