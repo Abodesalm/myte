@@ -34,7 +34,7 @@ const Price = ({type}) => {
         <div className="flex flex-row lg:flex-wrap lg:justify-evenly">
           {
             prices.pac.des.map(el=>{
-              return <Pack ty={el.ty} ti={el.ti} fe={el.fe} pr={el.pr} pe={el.pe}/>
+              return <Pack key={el.ty} ty={el.ty} ti={el.ti} fe={el.fe} pr={el.pr} pe={el.pe}/>
             })
           }
         </div>
@@ -50,7 +50,7 @@ const Price = ({type}) => {
         <div className="flex flex-row lg:flex-wrap lg:justify-evenly">
           {
             prices.pac.vis.map(el=>{
-              return <Pack ty={el.ty} ti={el.ti} fe={el.fe} pr={el.pr} pe={el.pe}/>
+              return <Pack key={el.ty} ty={el.ty} ti={el.ti} fe={el.fe} pr={el.pr} pe={el.pe}/>
             })
           }
         </div>

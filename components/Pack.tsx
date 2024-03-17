@@ -42,7 +42,7 @@ const Pack = ({clas = '',ty,ti,pr,pe,fe}) => {
         <ul className="ms-6 md:text-[12px]">
           {
             fe.map(el=>{
-              return <li>{el}</li>
+              return <li key={el}>{el}</li>
             })
           }
         </ul>
