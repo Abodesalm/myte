@@ -27,6 +27,14 @@
   font-family: ar-l;
   src: url("../media/Shabnam-Light.ttf");
 }
+@font-face {
+  font-family: en-b;
+  src: url("../media/Saira-ExtraBold.ttf");
+}
+@font-face {
+  font-family: en-l;
+  src: url("../media/Saira-Regular.ttf");
+}
 .pad {
   padding: 2rem 10rem;
 }
@@ -80,6 +88,14 @@ body {
 
 .ar-l {
   font-family: ar-l;
+}
+
+.en-b {
+  font-family: en-b !important;
+}
+
+.en-l {
+  font-family: en-l !important;
 }
 
 .ribon::before {
@@ -228,7 +244,7 @@ body {
 }
 
 .nav-links-ss {
-  list-style: none;
+  list-style: none !important;
 }
 
 .nav-links-ss li {
@@ -267,6 +283,13 @@ body {
   .nav-ss {
     display: flex;
   }
+  .rot {
+    transform: rotate(312deg);
+    -webkit-transform: rotate(312deg);
+    -moz-transform: rotate(312deg);
+    -ms-transform: rotate(312deg);
+    -o-transform: rotate(312deg);
+  }
 }
 @media screen and (max-width: 500px) {
   nav {
@@ -278,4 +301,11 @@ body {
   .nav-logo img {
     width: 110px;
   }
+}
+ul {
+  list-style: circle;
+}
+
+.over-h {
+  overflow: hidden !important;
 }/*# sourceMappingURL=globals.css.map */

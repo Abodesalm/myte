@@ -12,7 +12,7 @@ const Contact = ({children=<></>}) => {
         {children}
         {
           accounts.map((acc)=>
-            <AccountLink clas="bg-gradient-to-tr dark:from-dark dark:to-darke from-lity to-light font-bold dark:font-normal sh3 hover:text-sec dark:hover:border-main dark:hover:text-main hover:border-sec transition duration-300 " key={acc.icon} name={acc.name} url={acc.url} icon={acc.icon}/>
+            <AccountLink clas="bg-gradient-to-tr dark:from-dark dark:to-darke from-lity to-light font-bold dark:font-normal sh3 hover:text-sec dark:hover:border-main dark:hover:text-main hover:border-sec transition duration-300 en-l " key={acc.icon} name={acc.name} url={acc.url} icon={acc.icon}/>
           )
         }
     </div>

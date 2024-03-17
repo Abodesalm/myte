@@ -17,7 +17,7 @@ export default function Footer () {
 
 
 
-            <div className="w-full h-full flex flex-col justify-evenly md:p-8">
+            <div className="w-full h-full flex flex-col justify-evenly md:p-8 en-l gap-[4px]">
                 {accounts.slice(1,-1).map((acc)=>
                     <SmallLink name={acc.name} url={acc.url} icon={acc.icon} key={acc.icon}/>
                 )}
@@ -39,7 +39,7 @@ export default function Footer () {
 
             <div className="w-full h-full flex flex-col items-center justify-center">
                 <Image src={logo} width={150} alt="شعار مؤسسة مايت الإلكترونية"/>
-                <p>Copyright Myte Team {year}</p>
+                <p className="en-l">Copyright Myte Team {year}</p>
             </div>
         </footer>
     )

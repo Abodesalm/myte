@@ -2,7 +2,7 @@
 
 
 const accounts = [
-    {name:'WhatsApp',url:'https://wa.me/+966592437169',icon:'WA'},
+    {name:'WhatsApp',url:'https://wa.me/0966592437169',icon:'WA'},
     {name:'Telegram',url:'www.te.me',icon:'TE'},
     {name:'Discord',url:'https://discord.gg/s8rhJ8qgNF',icon:'DI'},
     {name:'Facebook',url:'https://www.facebook.com/profile.php?id=61555551359909&mibextid=ZbWKwL',icon:'FB'},
@@ -126,7 +126,19 @@ const prices = {
     apk : {sm:400, lg:1800},
     des : {ph:20, mo:50, vo:20, sm:80, md:120, lg:240},
     vis : {lo:100, co:10, fo:60, sm:100, md:230, lg:260},
-    oth : {wr:20}
+    oth : {wr:20},
+    pac : {
+        des:[
+            {ty:'sm',pr:80,pe:'20%',ti:'باقة صغيرة',fe:['صورتين','فيديو 30 ثانية']},
+            {ty:'md',pr:120,pe:'40%',ti:'باقة ممتازة',fe:['3 صور','فيديو 60 ثانية']},
+            {ty:'lg',pr:240,pe:'30%',ti:'باقة أسطورية',fe:['5 صور','فيديو 120 ثانية','تعليق صوتي']}
+        ],
+        vis:[
+            {ty:'sm',pr:100,pe:'40%',ti:'باقة صغيرة',fe:['تصميم لوغو','تنسيق لوني']},
+            {ty:'md',pr:230,pe:'55%',ti:'باقة ممتازة',fe:['تصميم لوغو','تنسيق لوني','تنسيق خط مناسب','تصميم pattern خاص بك']},
+            {ty:'lg',pr:260,pe:'60%',ti:'هوية تجارية كاملة',fe:['تصميم لوغو','تنسيق لوني','تنسيق خط مناسب','تصميم pattern خاص بك','تصميم MockUps']}
+        ]
+    }
 }
 
 

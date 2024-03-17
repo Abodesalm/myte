@@ -16,7 +16,7 @@ const SmallLink = ({icon,name,url}) => {
   }
 
   return (
-    <Link href={url} target="_blanc" className="flex flex-row justify-end gap-[10px] hover:text-main cursor-pointer">
+    <Link href={url} target="_blanc" className="flex flex-row justify-end items-center gap-[10px] hover:text-main cursor-pointer">
       <p>{name}</p>
       {Choose('text-[20px]')}
     </Link>

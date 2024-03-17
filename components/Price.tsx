@@ -2,6 +2,8 @@ import Aproval from "./Aproval"
 import HT from "./HT"
 import Pack from "./Pack"
 import { prices } from "@/public/data/all"
+import Bill from "./Bill"
+
 
 const pr = prices
 /*
@@ -9,9 +11,6 @@ const pr = prices
 */
 
 const Price = ({type}) => {
-
-  const Bill = ({val})=>{return<span className="text-green-700 dark:text-green-500 font-bold">{val}</span>}
-
   const Choose = () => {
     if(type=='web'){
       return<>
@@ -32,7 +31,13 @@ const Price = ({type}) => {
         <Aproval clas="md:text-[12px] font-light" value={<p>التعليق الصوتي : سعره لكل دقيقة <Bill val={pr.des.vo +' ر.س' + ' ('+pr.des.vo/4 +'$)'}/></p>}/>
 
         <HT value={"باقات التصميم :"} clas="w-[220px] rounded-[20px] mt-8 md:mb-2"/>
-        <Pack />
+        <div className="flex flex-row lg:flex-wrap lg:justify-evenly">
+          {
+            prices.pac.des.map(el=>{
+              return <Pack ty={el.ty} ti={el.ti} fe={el.fe} pr={el.pr} pe={el.pe}/>
+            })
+          }
+        </div>
       </>
     }
     else if(type=='vis'){
@@ -42,7 +47,14 @@ const Price = ({type}) => {
         <Aproval clas="md:text-[12px] font-light" value={<p>تصميم خط خاص بك : يبدأ سعره من <Bill val={pr.vis.fo +' ر.س'+' ('+pr.vis.fo/4 +'$)'}/></p>}/>
 
         <HT value={"باقات الهوية البصرية :"} clas="w-[280px] rounded-[20px] mt-8 md:mb-2"/>
-        <Pack />
+        <div className="flex flex-row lg:flex-wrap lg:justify-evenly">
+          {
+            prices.pac.vis.map(el=>{
+              return <Pack ty={el.ty} ti={el.ti} fe={el.fe} pr={el.pr} pe={el.pe}/>
+            })
+          }
+        </div>
+
       </>
     }
     else if(type=='cyb'){
