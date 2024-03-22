@@ -51,7 +51,7 @@ const Pack = ({clas = '',ty,ti,pr,pe,fe}) => {
 
       <div className="ms-2 mt-4 md:text-[12px]">
         <p className="mb-2">السعر : <Bill val={pr + ' ر.س ('+pr/4+'$)'}/></p>
-        <Btn value='تقديم طلب' classn='' link={accounts[0].url} target="_blanc"/>
+        <Btn value='تقديم طلب' classn='' style={{backgroundColor:logo()}} link={accounts[0].url} target="_blanc"/>
       </div>
 
     </div>

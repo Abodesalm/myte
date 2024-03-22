@@ -4,9 +4,9 @@
 const accounts = [
     {name:'WhatsApp',url:'https://wa.me/0966592437169',icon:'WA'},
     {name:'Telegram',url:'www.te.me',icon:'TE'},
-    {name:'Discord',url:'https://discord.gg/s8rhJ8qgNF',icon:'DI'},
-    {name:'Facebook',url:'https://www.facebook.com/profile.php?id=61555551359909&mibextid=ZbWKwL',icon:'FB'},
     {name:'Instagram',url:'https://www.instagram.com/myte.team?igsh=NHFvajRuajQ3ZnNq',icon:'IN'},
+    {name:'Facebook',url:'https://www.facebook.com/profile.php?id=61555551359909&mibextid=ZbWKwL',icon:'FB'},
+    {name:'Discord',url:'https://discord.gg/s8rhJ8qgNF',icon:'DI'},
     {name:'TikTok',url:'https://vt.tiktok.com/ZSFNeJuVs/',icon:'TT'},
     {name:'myte.social@gmail.com',url:'mailto:myte.social@gmail.com',icon:'EM'}
 ]
@@ -34,10 +34,9 @@ const why = [
 const about = [
     'مؤسسة إلكترونية مركزها في المملكة العربية السعودية.',
     'رغم ذلك تستطيع طلب خدمتك من أي مكان في العالم !',
+    'لدينا العديد من الخبراء في شتى المجالات يعملون على تقديم خدمتك.',
     'نقدم جميع الخدمات التي يمكن أن تتخيلها في المجال الإلكتروني.',
     'أهم شيء بالنسبة لنا هو رضى العميل التام.',
-    '',
-    '',
     'لدينا أعضاء في المؤسسة من مختلف دول العالم , لذا لن تحس بأنك غريب.',
     'إن كنت تريد الانضمام إلينا فلا تتردد بالتواصل معنا !',
 ]
@@ -90,7 +89,8 @@ const policy = {
         'بشكل عام نحن نتبع سياسة الدفع العادل مما يضمن حق المؤسسة و حق العميل ، فيدفع العميل مبلغ مقدم ليتم البدء بالخدمة و يتم توضيح هذا المبلغ في فاتورة الخدمة ، و بعد الانتهاء من الخدمة و تأكد العميل منها يدفع بقية المبلغ و من ثم يستلم الخدمة بشكل تام.',
         'يجب على العملاء التواصل مع الحسابات الرسمية الخاصة بالمؤسسة ، لا يتم تقديم أي فاتورة في مكان غير حسابات المؤسسة الرسمية.',
         'لا يتم استرجاع أي مبلغ مدفوع إلا إن كان هناك خلل في الخدمة و الخلل صادر عن المؤسسة ، و لديك مهلة يوم واحد بعد الدفع لاسترجاع المبلغ في هذه الحالة ، و لا يتم قبول أي مطالبات تنشأ عن إهمال أو خطأ من المستخدم.',
-        'عند موافقتك على عقد الخدمة فأنت توافق على كل ما فيه من شروط ، و في حالة مخالفة أحدها سيتم إحالة الأمر إلى القانون.'
+        'عند موافقتك على عقد الخدمة فأنت توافق على كل ما فيه من شروط ، و في حالة مخالفة أحدها سيتم إحالة الأمر إلى القانون.',
+        'يتم تقديم جميع التديلات العادية و البسيطة مجانا و لكن في حال كثرت التعديلات يصبح هناك زيادة بسيطة في السعر ، و لا يتم قبول طلب التعديلات الجذرية'
     ],
     'sens':[
         'لن يتم حفظ أي بيانات حساسة لأي عميل لدينا.',
@@ -114,7 +114,7 @@ Visual Idenity :
   - font :      +60 R.S.
 	- Small Pack : 	Logo , Colors  :			                        100 R.S.  (200)
 	- Medium Pack :	Logo , Colors , Font , Pattern  :	            230 R.S.  (500)
-	- Large Pack :	Logo , Colors , Font , Pattern , MockUps  :   260 R.S.  (650)
+	- Large Pack :	Logo , Colors , Font , Pattern , MockUps  :   300 R.S.  (650)
 Write / Script :	+20 R.S
 
 */
@@ -135,11 +135,30 @@ const prices = {
         vis:[
             {ty:'sm',pr:100,pe:'40%',ti:'باقة صغيرة',fe:['تصميم لوغو','تنسيق لوني']},
             {ty:'md',pr:230,pe:'55%',ti:'باقة ممتازة',fe:['تصميم لوغو','تنسيق لوني','تنسيق خط مناسب','تصميم pattern خاص بك']},
-            {ty:'lg',pr:260,pe:'60%',ti:'هوية تجارية كاملة',fe:['تصميم لوغو','تنسيق لوني','تنسيق خط مناسب','تصميم pattern خاص بك','تصميم MockUps']}
+            {ty:'lg',pr:300,pe:'40%',ti:'هوية تجارية كاملة',fe:['تصميم لوغو','تنسيق لوني','تنسيق خط مناسب','تصميم pattern خاص بك','تصميم MockUps']}
         ]
     }
 }
 
+/*
+    {
+        disc:'',
+        conds:['',''],
+        price:  ,  prePrice:  ,  aftPrice:  ,
+        custName:'',  custNum:'',
+        miDate:  ,  hiDate: 
+    }
+*/
+
+const contacts = [
+    {
+        disc:'',
+        conds:['',''],
+        price: 1 ,  prePrice: 1 ,  aftPrice: 1 ,
+        custName:'',  custNum:'',
+        miDate: new Date ,  hiDate: new Date
+    }
+]
 
 export {
     accounts,
@@ -148,5 +167,6 @@ export {
     services,
     about,
     policy,
-    prices
+    prices,
+    contacts
 }

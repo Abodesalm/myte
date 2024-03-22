@@ -27,7 +27,7 @@ const Project = ({title, type, disc, url}) => {
         <p>{typee()}</p>
       </div>
       <div className="flex flex-col p-4 sm:p-2">
-        <h1 className="font-bold lss sm:text-[12px] text-center">{title}</h1>
+        <h1 className=" sm:text-[12px] text-center">{title}</h1>
         <hr/>
         <p className="w-[150px] text-[14px] mt-2 sm:text-[10px]">{disc}</p>
         <Btn link={url} target='_blanc' value='إذهب' classn='self-center mt-2'/>
