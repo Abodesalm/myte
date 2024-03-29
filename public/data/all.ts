@@ -4,10 +4,9 @@
 const accounts = [
     {name:'WhatsApp',url:'https://wa.me/0966592437169',icon:'WA'},
     {name:'Telegram',url:'www.te.me',icon:'TE'},
-    {name:'Instagram',url:'https://www.instagram.com/myte.team?igsh=NHFvajRuajQ3ZnNq',icon:'IN'},
+    {name:'Instagram',url:'https://www.instagram.com/myte.team_',icon:'IN'},
     {name:'Facebook',url:'https://www.facebook.com/profile.php?id=61555551359909&mibextid=ZbWKwL',icon:'FB'},
     {name:'Discord',url:'https://discord.gg/s8rhJ8qgNF',icon:'DI'},
-    {name:'TikTok',url:'https://vt.tiktok.com/ZSFNeJuVs/',icon:'TT'},
     {name:'myte.social@gmail.com',url:'mailto:myte.social@gmail.com',icon:'EM'}
 ]
 
@@ -114,7 +113,7 @@ Visual Idenity :
   - font :      +60 R.S.
 	- Small Pack : 	Logo , Colors  :			                        100 R.S.  (200)
 	- Medium Pack :	Logo , Colors , Font , Pattern  :	            230 R.S.  (500)
-	- Large Pack :	Logo , Colors , Font , Pattern , MockUps  :   300 R.S.  (650)
+	- Large Pack :	Logo , Colors , Font , Pattern , MockUps , anime  :   300 R.S.  (650)
 Write / Script :	+20 R.S
 
 */
@@ -135,7 +134,7 @@ const prices = {
         vis:[
             {ty:'sm',pr:100,pe:'40%',ti:'باقة صغيرة',fe:['تصميم لوغو','تنسيق لوني']},
             {ty:'md',pr:230,pe:'55%',ti:'باقة ممتازة',fe:['تصميم لوغو','تنسيق لوني','تنسيق خط مناسب','تصميم pattern خاص بك']},
-            {ty:'lg',pr:300,pe:'40%',ti:'هوية تجارية كاملة',fe:['تصميم لوغو','تنسيق لوني','تنسيق خط مناسب','تصميم pattern خاص بك','تصميم MockUps']}
+            {ty:'lg',pr:300,pe:'40%',ti:'هوية تجارية كاملة',fe:['تصميم لوغو','تنسيق لوني','تنسيق خط مناسب','تصميم pattern خاص بك','تصميم MockUps','تصميم أنيميشن للوغو']}
         ]
     }
 }
