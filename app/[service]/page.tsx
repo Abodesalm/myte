@@ -17,7 +17,6 @@ export default function Service () {
   else if(serv=='mob'){data = services.mob} 
   else if(serv=='des'){data = services.des} 
   else if(serv=='vis'){data = services.vis} 
-  else if(serv=='cyb'){data = services.cyb} 
   else if(serv=='ofc'){data = services.ofc} 
   else if(serv=='oth'){data = services.oth} 
   else{redirect('not-found/not')}

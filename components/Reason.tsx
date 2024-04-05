@@ -5,7 +5,7 @@ import { BsCheckCircleFill, BsUniversalAccess, BsWrenchAdjustable } from "react-
 
 const Reason = ({title, icon}) => {
 
-  const clas = 'text-[40px] text-main';
+  const clas = 'text-[40px] text-main sm:text-[30px]';
 
   const Choose = ()=>{
     switch(icon){
@@ -22,12 +22,12 @@ const Reason = ({title, icon}) => {
 
   return (
     <div className="
-      flex flex-col items-center text-center w-[150px] border-2 border-dark dark:border-light rounded-[20px]
+      flex flex-col items-center text-center w-[180px] h-[180px] sm:h-[150px] sm:w-[150px] border-2 border-dark dark:border-light rounded-full
     ">
-      <div className="border border-dark dark:border-light rounded-full mx-4 mt-2 w-[60px] h-[60px] flex justify-center items-center">
+      <div className="border border-dark dark:border-light/50 rounded-full mx-4 mt-2 w-[60px] h-[60px] sm:w-[50px] sm:h-[50px] flex justify-center items-center">
         {Choose()}
       </div>
-      <p className="text-[18px] m-4">{title}</p>
+      <p className="text-[18px] sm:text-[15px] m-4">{title}</p>
     </div>
   )
 }

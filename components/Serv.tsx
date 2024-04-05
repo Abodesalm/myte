@@ -15,8 +15,6 @@ const Serv = ({clas, title, icon, url}) => {
       return <BsCamera2 className={clas}/>
     }else if(icon=='vis'){
       return <BsEyeFill className={clas}/>
-    }else if(icon=='cyb'){
-      return <FaShieldVirus className={clas}/>
     }else if(icon=='ofc'){
       return <BsFolderSymlinkFill className={clas}/>
     }else if(icon=='oth'){
